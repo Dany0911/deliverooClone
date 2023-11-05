@@ -18,7 +18,7 @@ const DeliveryScreen = () => {
                 <View className='flex-row justify-between items-center p-5'>
                     <TouchableOpacity
                         onPress={() => navigation.navigate("Home")}>
-                        <XMarkIcon color="black" size={30} />
+                        <XMarkIcon color="white" size={30} />
                     </TouchableOpacity>
                     <Text className='font-light text-white text-lg'>Order Help</Text>
                 </View>
@@ -31,7 +31,7 @@ const DeliveryScreen = () => {
                     </View>
                     <Image
                     source={{
-                        uri: "https//links.papareact.com/fls",
+                        uri: "https://links.papareact.com/fls",
                     }}
                         className='h-20 w-20'
                     />
@@ -43,6 +43,12 @@ const DeliveryScreen = () => {
                     </Text>
                 </View>
             </SafeAreaView>
+            <Image
+                source={{
+                    uri: "https://www.google.com/maps/d/thumbnail?mid=1a3BxNf6f2phi6-gZ-i6ssb3ofJk",
+                }}
+                className='h-96 w-96'
+            />
         </View>
     )
 }
