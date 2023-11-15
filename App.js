@@ -10,6 +10,7 @@ import store from './store';
 import BasketScreen from './screens/BasketScreen';
 import PreparingOrderScreen from './screens/PreparingOrderScreen';
 import DeliveryScreen from './screens/DeliveryScreen';
+import WelcomeScreen from './screens/WelcomeScreen';
 
 
 const Stack = createNativeStackNavigator();
@@ -20,7 +21,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Provider store={store}>
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName="Welcome">
+        <Stack.Screen name="Welcome" component={WelcomeScreen} />
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="Restaurant" component={RestaurantScreen} />
           <Stack.Screen name="Basket"
